@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoş Geldin Canım Karım Zeynep 💛🦜</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito:wght@400;600;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fcf9f2;
+            font-family: 'Nunito', sans-serif;
+            color: #4a3b32;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 30px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(220, 209, 190, 0.4);
+            border: 2px solid #f3ebd9;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Papağan ve kuş detayları (Soft Opaklık) */
+        .container::before {
+            content: '🦜';
+            position: absolute;
+            top: -20px;
+            right: -10px;
+            font-size: 100px;
+            opacity: 0.08;
+            transform: rotate(15deg);
+        }
+
+        .container::after {
+            content: '🕊️';
+            position: absolute;
+            bottom: -20px;
+            left: -10px;
+            font-size: 80px;
+            opacity: 0.06;
+            transform: rotate(-15deg);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Comfortaa', cursive;
+            font-size: 26px;
+            color: #dca11d;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .intro-text {
+            font-size: 16px;
+            background-color: #fefcf5;
+            padding: 20px;
+            border-radius: 20px;
+            border-left: 4px solid #fada5e;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .day-card {
+            background: #fffdf9;
+            border: 1px solid #f5edd6;
+            border-radius: 24px;
+            padding: 25px;
+            margin-bottom: 30px;
+            position: relative;
+            transition: transform 0.2s ease;
+        }
+
+        .day-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(220, 209, 190, 0.2);
+        }
+
+        h2 {
+            font-family: 'Comfortaa', cursive;
+            font-size: 18px;
+            color: #b58315;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px dashed #f5edd6;
+            padding-bottom: 8px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 15px;
+            color: #5c4b41;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 5px;
+        }
+
+        li {
+            font-size: 15px;
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 20px;
+            color: #5c4b41;
+        }
+
+        li::before {
+            content: '✨';
+            position: absolute;
+            left: 0;
+            color: #fada5e;
+        }
+
+        .highlight-box {
+            background-color: #f5fbf7;
+            border: 1px dashed #a2e8dd;
+            padding: 15px;
+            border-radius: 15px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #f5edd6;
+            font-size: 13px;
+            color: #a39085;
+            font-family: 'Comfortaa', cursive;
+        }
+
+        .heart {
+            color: #e25555;
+            animation: heartbeat 1.5s infinite;
+            display: inline-block;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .parrot-divider {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hoş Geldin Canım Karım Zeynep 💛🦜</h1>
+            <div class="intro-text">
+                "İstanbul seni bekliyor, Ben de öyle. İstanbul’da geçireceğiniz üç gün için, birlikte kolayca bakabileceğiniz küçük bir rota hazırladım. Bu site, İstanbul’da kaybolmaman (Kaybolabileceğin tek yer sana olan aşkımın kalbimdeki büyüklüğü olduğundan..) için hazırlandı. Güzel anılar biriktirmen dileğiyle. 💛"
+            </div>
+        </header>
+
+        <div class="day-card">
+            <h2>🌆 1. Gün — Taksim • Galata • Cihangir • Karaköy • Beşiktaş</h2>
+            <p>Sabah Taksim Meydanı’nda buluşup güne İstiklal Caddesi’nden yürüyerek başlayın. Yol üzerinde sokak müzisyenleri, tarihi binalar ve küçük dükkânlara da göz atabilirsiniz.</p>
+            <p>İstiklal’in sonlarına doğru <strong>Galata Kulesi</strong>‘ne geçin. Eğer sıra çok uzun değilse kuleye çıkabilirsiniz; manzara gerçekten güzel. Galata’dan çıktıktan sonra birkaç dakika yürüyerek <strong>Kamondo Merdivenleri</strong>’ni de görün, fotoğraf çekmek için çok güzel bir nokta.</p>
+            <p>Oradan <strong>Cihangir</strong> tarafına yürüyün. Biraz yokuş var ama mahalle çok keyifli. Burada <em>Toganoo Tea House</em> ya da <em>Muus Coffee</em>’de oturup kahve veya matcha molası verebilirsiniz.</p>
+            <p>Dinlendikten sonra yürüyerek <strong>Karaköy</strong>’e inin. Acıkmış olursanız <em>Meşhur Balıkçı Eyyüp Usta</em>‘da balık ekmek ya da balık dürüm yiyebilirsiniz. Yemekten sonra sahilde biraz oturup Boğaz’ın tadını çıkarın.</p>
+            <p>Karaköy İskelesi’nden vapura binip <strong>Beşiktaş</strong>‘a geçin. Zaten yolculuğun kendisi bile İstanbul’un en keyifli deneyimlerinden biri.</p>
+            <p>Beşiktaş’a vardığınızda çarşıyı dolaşın, ara sokaklarda gezin, canınız nereye isterse oturun. Akşam olmadan isterseniz sahil boyunca yürüyüp <strong>Dolmabahçe Sarayı</strong>’nın dış cephesini de görebilirsiniz. Gece ışıklarıyla çok güzel görünüyor.</p>
+            <p>Akşam yemeğini de Beşiktaş’ta yemenizi öneririm; seçenek gerçekten çok fazla.</p>
+        </div>
+
+        <div class="parrot-divider">🦜 🌸 🦜</div>
+
+        <div class="day-card">
+            <h2>🌊 2. Gün — Kadıköy • Moda • Büyükada</h2>
+            <p>Sabah Taksim’den Kabataş’a geçip vapurla <strong>Kadıköy</strong>‘e gidin. İstanbul’a gelmişken vapur kullanmadan olmaz. 😭</p>
+            <p>Kadıköy’e vardıktan sonra <strong>Moda</strong> tarafına yürüyün. İsterseniz nostaljik tramvaya da binebilirsiniz. Sahilde yürüyüş yapıp <em>Flare</em> ya da <em>Dem Moda</em>‘da kahve içebilirsiniz.</p>
+            <p>Sonra tekrar Kadıköy İskelesi’ne dönüp <strong>Büyükada</strong> vapuruna binin. Gitmeden önce Şehir Hatları uygulamasından vapur saatlerine bakmayı unutmayın.</p>
+            <p>Büyükada’ya vardığınızda bisiklet kiralayıp adayı dolaşabilirsiniz. Köşklerin arasından geçmek gerçekten çok keyifli. Yol üzerinde hoşunuza giden bir yerde öğle yemeği yiyip daha sonra <strong>Dilburnu Tabiat Parkı</strong> tarafına gidebilirsiniz. Manzara için en güzel yerlerden biri.</p>
+            <p>Akşamüstü dönüş vapuruyla tekrar Kadıköy’e geçin.</p>
+            <p>Eğer hâlâ enerjiniz kalmışsa Kadıköy sokaklarında biraz daha dolaşıp akşam yemeğini burada yiyebilirsiniz. Yorulduysanız direkt Taksim’e dönmek de gayet mantıklı.</p>
+        </div>
+
+        <div class="parrot-divider">🦜 🌸 🦜</div>
+
+        <div class="day-card">
+            <h2>⛪️🖼️ 3. Gün — Kiliseler & Müzeler</h2>
+            <p>Son güne Taksim Meydanı’nın hemen yanında bulunan <strong>Aya Triada Kilisesi</strong> ile başlayabilirsiniz. İstanbul’un en büyük Rum Ortodoks kiliselerinden biri ve içerisi gerçekten çok etkileyici.</p>
+            <p>Ardından İstiklal Caddesi boyunca yürüyerek <strong>St. Antuan Kilisesi</strong>‘ne gidin. İstanbul’un en büyük Katolik kilisesi ve mimarisi gerçekten görülmeye değer.</p>
+            <p>Buradan sonra gününüze göre müze seçebilirsiniz:</p>
+            <ul>
+                <li>Eğer denk geliyorsa <strong>İstanbul Modern</strong>’in ücretsiz saatlerinden faydalanabilirsiniz.</li>
+                <li>Ya da <strong>Pera Müzesi</strong>’ne uğrayabilirsiniz. Özellikle sergileri çok başarılı oluyor.</li>
+            </ul>
+            <div class="highlight-box">
+                <strong>Müze gezisinden sonra hâlâ vaktiniz varsa iki seçenek var:</strong><br>
+                • Beşiktaş’a geçip Deniz Müzesi’ni gezebilirsiniz.<br>
+                • Ya da son günü tamamen serbest bırakıp tekrar en sevdiğiniz yerlere gidip alışveriş yapabilir, İstiklal’de dolaşabilir ya da son kahvenizi içebilirsiniz.
+            </div>
+        </div>
+
+        <footer>
+            Sadece senin için, sonsuz bir aşk ve <span class="heart">♥</span> ile kodlandı.
+        </footer>
+    </div>
+
+</body>
+</html>
