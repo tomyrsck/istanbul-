@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoş Geldin Canım Karım Zeynep 💛🦜</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@500;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Renkli degrade arka plan */
+            background: linear-gradient(135deg, #fffcf0 0%, #f4fbe9 50%, #fff5f5 100%);
+            font-family: 'Quicksand', sans-serif;
+            color: #44362b;
+            line-height: 1.6;
+            padding: 20px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Sabit büyük yaprak ve çiçek silüetleri */
+        body::before {
+            content: '🌿';
+            position: fixed;
+            top: 10%;
+            left: -20px;
+            font-size: 80px;
+            opacity: 0.15;
+            transform: rotate(30deg);
+            pointer-events: none;
+        }
+
+        body::after {
+            content: '🌸';
+            position: fixed;
+            bottom: 10%;
+            right: -20px;
+            font-size: 70px;
+            opacity: 0.2;
+            transform: rotate(-15deg);
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 35px;
+            padding: 45px 30px;
+            box-shadow: 0 15px 35px rgba(234, 218, 179, 0.6), 0 5px 15px rgba(255, 192, 203, 0.4);
+            border: 3px solid #fce2a6;
+            position: relative;
+            overflow: hidden;
+            z-index: 2; /* Metinlerin emojilerin üstünde kalması için */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        /* Can alıcı başlık */
+        h1 {
+            font-family: 'Fredoka', cursive;
+            font-size: 32px;
+            color: #ffb703;
+            text-shadow: 2px 2px 0px #fff7d6, 4px 4px 0px rgba(255, 183, 3, 0.15);
+            margin-bottom: 20px;
+            font-weight: 700;
+            display: inline-block;
+            position: relative;
+        }
+
+        h1::after {
+            content: ' ✨🌈✨';
+            font-size: 20px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .intro-text {
+            font-size: 16px;
+            font-weight: 700;
+            background: linear-gradient(120deg, #fffbeb 0%, #fff3f3 100%);
+            padding: 25px;
+            border-radius: 25px;
+            border: 2px dashed #ffb703;
+            margin-bottom: 35px;
+            box-shadow: inset 0 0 10px rgba(255, 183, 3, 0.05);
+            position: relative;
+        }
+
+        .day-card {
+            background: #ffffff;
+            border: 2.5px solid #e1f2cc;
+            border-radius: 28px;
+            padding: 28px;
+            margin-bottom: 35px;
+            position: relative;
+            box-shadow: 0 8px 0px #e1f2cc;
+            transition: all 0.3s ease;
+        }
+
+        .day-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 0px #d4ecb8, 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .day-1 h2 { color: #e65c00; border-bottom-color: #ffd1b3; }
+        .day-2 h2 { color: #009973; border-bottom-color: #b3f0e1; }
+        .day-3 h2 { color: #9900cc; border-bottom-color: #f0b3ff; }
+
+        h2 {
+            font-family: 'Fredoka', cursive;
+            font-size: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 3px dotted;
+            padding-bottom: 12px;
+        }
+
+        p {
+            font-size: 15.5px;
+            margin-bottom: 18px;
+            color: #554437;
+            font-weight: 500;
+        }
+
+        strong {
+            font-weight: 700;
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 6px;
+            color: #b37400;
+        }
+
+        em {
+            font-style: normal;
+            font-weight: 700;
+            background-color: #ffe6e6;
+            padding: 2px 6px;
+            border-radius: 6px;
+            color: #cc2929;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 5px;
+            margin-top: 10px;
+        }
+
+        li {
+            font-size: 15.5px;
+            margin-bottom: 14px;
+            position: relative;
+            padding-left: 28px;
+            color: #554437;
+            font-weight: 500;
+        }
+
+        li::before {
+            content: '👑';
+            position: absolute;
+            left: 0;
+            font-size: 16px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #eef9ff 0%, #f4f1ff 100%);
+            border: 2px dashed #99ccff;
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 20px;
+            font-size: 15px;
+            box-shadow: 0 5px 15px rgba(153, 204, 255, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 45px;
+            padding-top: 25px;
+            border-top: 2.5px dashed #fce2a6;
+            font-size: 15px;
+            color: #8c7361;
+            font-family: 'Fredoka', cursive;
+            font-weight: 600;
+        }
+
+        .heart {
+            color: #ff3366;
+            font-size: 20px;
+            animation: heartbeat 1.2s infinite;
+            display: inline-block;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            30% { transform: scale(1.2); }
+            60% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        .parrot-divider {
+            text-align: center;
+            font-size: 28px;
+            margin: 25px 0;
+            filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));
+        }
+
+        /* EKRANDA UÇUŞAN EMOJİLERİN CSS KODU */
+        .floating-emoji {
+            position: fixed; /* Sayfa kaydırılsa bile ekranda sabit kalmalarını sağlar */
+            top: -50px;
+            user-select: none;
+            pointer-events: none; /* Üzerine tıklanmasını engeller, metin okunmasını bozmaz */
+            z-index: 1; /* Arka planda kalmasını sağlar */
+            animation: floatUp linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.9;
+            }
+            90% {
+                opacity: 0.9;
+            }
+            100% {
+                transform: translateY(105vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hoş Geldin Canım Karım Zeynep 💛🦜</h1>
+            <div class="intro-text">
+                "İstanbul seni bekliyor, Ben de öyle. İstanbul’da geçireceğiniz üç gün için, birlikte kolayca bakabileceğiniz küçük bir rota hazırladım. Bu site, İstanbul’da kaybolmaman (Kaybolabileceğin tek yer sana olan aşkımın kalbimdeki büyüklüğü olduğundan..) için hazırlandı. Güzel anılar biriktirmen dileğiyle. 💛"
+            </div>
+        </header>
+
+        <!-- 1. Gün -->
+        <div class="day-card day-1">
+            <h2>🌆 1. Gün — Taksim • Galata • Cihangir • Karaköy • Beşiktaş</h2>
+            <p>Sabah Taksim Meydanı’nda buluşup güne İstiklal Caddesi’nden yürüyerek başlayın. Yol üzerinde sokak müzisyenleri, tarihi binalar ve küçük dükkânlara da göz atabilirsiniz.</p>
+            <p>İstiklal’in sonlarına doğru <strong>Galata Kulesi</strong>‘ne geçin. Eğer sıra çok uzun değilse kuleye çıkabilirsiniz; manzara gerçekten güzel. Galata’dan çıktıktan sonra birkaç dakika yürüyerek <strong>Kamondo Merdivenleri</strong>’ni de görün, fotoğraf çekmek için çok güzel bir nokta.</p>
+            <p>Oradan <strong>Cihangir</strong> tarafına yürüyün. Biraz yokuş var ama mahalle çok keyifli. Burada <em>Toganoo Tea House</em> ya da <em>Muus Coffee</em>’de oturup kahve veya matcha molası verebilirsiniz.</p>
+            <p>Dinlendikten sonra yürüyerek <strong>Karaköy</strong>’e inin. Acıkmış olursanız <em>Meşhur Balıkçı Eyyüp Usta</em>‘da balık ekmek ya da balık dürüm yiyebilirsiniz. Yemekten sonra sahilde biraz oturup Boğaz’ın tadını çıkarın.</p>
+            <p>Karaköy İskelesi’nden vapura binip <strong>Beşiktaş</strong>‘a geçin. Zaten yolculuğun kendisi bile İstanbul’un en keyifli deneyimlerinden biri.</p>
+            <p>Beşiktaş’a vardığınızda çarşıyı dolaşın, ara sokaklarda gezin, canınız nereye isterse oturun. Akşam olmadan isterseniz sahil boyunca yürüyüp <strong>Dolmabahçe Sarayı</strong>’nın dış cephesini de görebilirsiniz. Gece ışıklarıyla çok güzel görünüyor.</p>
+            <p>Akşam yemeğini de Beşiktaş’ta yemenizi öneririm; seçenek gerçekten çok fazla.</p>
+        </div>
+
+        <div class="parrot-divider">✨🦜🌺🦜✨</div>
+
+        <!-- 2. Gün -->
+        <div class="day-card day-2">
+            <h2>🌊 2. Gün — Kadıköy • Moda • Büyükada</h2>
+            <p>Sabah Taksim’den Kabataş’a geçip vapurla <strong>Kadıköy</strong>‘e gidin. İstanbul’a gelmişken vapur kullanmadan olmaz. 😭</p>
+            <p>Kadıköy’e vardıktan sonra <strong>Moda</strong> tarafına yürüyün. İsterseniz nostaljik tramvaya da binebilirsiniz. Sahilde yürüyüş yapıp <em>Flare</em> ya da <em>Dem Moda</em>‘da kahve içebilirsiniz.</p>
+            <p>Sonra tekrar Kadıköy İskelesi’ne dönüp <strong>Büyükada</strong> vapuruna binin. Gitmeden önce Şehir Hatları uygulamasından vapur saatlerine bakmayı unutmayın.</p>
+            <p>Büyükada’ya vardığınızda bisiklet kiralayıp adayı dolaşabilirsiniz. Köşklerin arasından geçmek gerçekten çok keyifli. Yol üzerinde hoşunuza giden bir yerde öğle yemeği yiyip daha sonra <strong>Dilburnu Tabiat Parkı</strong> tarafına gidebilirsiniz. Manzara için en güzel yerlerden biri.</p>
+            <p>Akşamüstü dönüş vapuruyla tekrar Kadıköy’e geçin.</p>
+            <p>Eğer hâlâ enerjiniz kalmışsa Kadıköy sokaklarında biraz daha dolaşıp akşam yemeğini burada yiyebilirsiniz. Yorulduysanız direkt Taksim’e dönmek de gayet mantıklı.</p>
+        </div>
+
+        <div class="parrot-divider">✨🦜🌟🦜✨</div>
+
+        <!-- 3. Gün -->
+        <div class="day-card day-3">
+            <h2>⛪️🖼️ 3. Gün — Kiliseler & Müzeler</h2>
+            <p>Son güne Taksim Meydanı’nın hemen yanında bulunan <strong>Aya Triada Kilisesi</strong> ile başlayabilirsiniz. İstanbul’un en büyük Rum Ortodoks kiliselerinden biri ve içerisi gerçekten çok etkileyici.</p>
+            <p>Ardından İstiklal Caddesi boyunca yürüyerek <strong>St. Antuan Kilisesi</strong>‘ne gidin. İstanbul’un en büyük Katolik kilisesi ve mimarisi gerçekten görülmeye değer.</p>
+            <p>Buradan sonra gününüze göre müze seçebilirsiniz:</p>
+            <ul>
+                <li>Eğer denk geliyorsa <strong>İstanbul Modern</strong>’in ücretsiz saatlerinden faydalanabilirsiniz.</li>
+                <li>Ya da <strong>Pera Müzesi</strong>’ne uğrayabilirsiniz. Özellikle sergileri çok başarılı oluyor.</li>
+            </ul>
+            <div class="highlight-box">
+                <strong>🗺️ Müze gezisinden sonra hâlâ vaktiniz varsa iki harika seçenek var:</strong><br><br>
+                🎈 Beşiktaş’a geçip Deniz Müzesi’ni gezebilirsiniz.<br>
+                🎈 Ya da son günü tamamen serbest bırakıp tekrar en sevdiğiniz yerlere gidip alışveriş yapabilir, İstiklal’de dolaşabilir ya da son kahvenizi içebilirsiniz.
+            </div>
+        </div>
+
+        <footer>
+            Sadece senin için, sonsuz bir aşk ve <span class="heart">♥</span> ile kodlandı.
+        </footer>
+    </div>
+
+    <!-- SADECE KALP VE PAPAĞAN UÇURAN JAVASCRIPT KODU -->
+    <script>
+        // Sadece sarı kalp ve papağan emojileri
+        const emojis = ['💛', '🦜'];
+        
+        function createEmoji() {
+            const emoji = document.createElement('div');
+            emoji.classList.add('floating-emoji');
+            
+            emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+            emoji.style.left = Math.random() * 100 + 'vw';
+            
+            // Emojilerin boyutları
+            emoji.style.fontSize = Math.random() * 15 + 20 + 'px';
+            
+            // Düşüş hızı (7 ila 12 saniye arası)
+            emoji.style.animationDuration = Math.random() * 5 + 7 + 's';
+            
+            document.body.appendChild(emoji);
+            
+            setTimeout(() => {
+                emoji.remove();
+            }, 12000);
+        }
+
+        // Her 600 milisaniyede yeni bir emoji oluştur
+        setInterval(createEmoji, 600);
+    </script>
+
+</body>
+</html>
