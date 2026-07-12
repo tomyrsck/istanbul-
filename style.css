@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #fffcf0 0%, #f4fbe9 50%, #fff5f5 100%);
+    font-family: 'Quicksand', sans-serif;
+    color: #44362b;
+    line-height: 1.6;
+    padding: 20px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '🌿';
+    position: fixed;
+    top: 10%;
+    left: -20px;
+    font-size: 80px;
+    opacity: 0.15;
+    transform: rotate(30deg);
+    pointer-events: none;
+}
+
+body::after {
+    content: '🌸';
+    position: fixed;
+    bottom: 10%;
+    right: -20px;
+    font-size: 70px;
+    opacity: 0.2;
+    transform: rotate(-15deg);
+    pointer-events: none;
+}
+
+.container {
+    max-width: 650px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 35px;
+    padding: 45px 30px;
+    box-shadow: 0 15px 35px rgba(234, 218, 179, 0.6), 0 5px 15px rgba(255, 192, 203, 0.4);
+    border: 3px solid #fce2a6;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Fredoka', cursive;
+    font-size: 32px;
+    color: #ffb703;
+    text-shadow: 2px 2px 0px #fff7d6, 4px 4px 0px rgba(255, 183, 3, 0.15);
+    margin-bottom: 20px;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+}
+
+h1::after {
+    content: ' ✨🌈✨';
+    font-size: 20px;
+    display: block;
+    margin-top: 5px;
+}
+
+.intro-text {
+    font-size: 16px;
+    font-weight: 700;
+    background: linear-gradient(120deg, #fffbeb 0%, #fff3f3 100%);
+    padding: 25px;
+    border-radius: 25px;
+    border: 2px dashed #ffb703;
+    margin-bottom: 35px;
+    box-shadow: inset 0 0 10px rgba(255, 183, 3, 0.05);
+    position: relative;
+}
+
+.day-card {
+    background: #ffffff;
+    border: 2.5px solid #e1f2cc;
+    border-radius: 28px;
+    padding: 28px;
+    margin-bottom: 35px;
+    position: relative;
+    box-shadow: 0 8px 0px #e1f2cc;
+    transition: all 0.3s ease;
+}
+
+.day-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 0px #d4ecb8, 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.day-1 h2 { color: #e65c00; border-bottom-color: #ffd1b3; }
+.day-2 h2 { color: #009973; border-bottom-color: #b3f0e1; }
+.day-3 h2 { color: #9900cc; border-bottom-color: #f0b3ff; }
+
+h2 {
+    font-family: 'Fredoka', cursive;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 3px dotted;
+    padding-bottom: 12px;
+}
+
+p {
+    font-size: 15.5px;
+    margin-bottom: 18px;
+    color: #554437;
+    font-weight: 500;
+}
+
+strong {
+    font-weight: 700;
+    background-color: #fff3cd;
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #b37400;
+}
+
+em {
+    font-style: normal;
+    font-weight: 700;
+    background-color: #ffe6e6;
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #cc2929;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+li {
+    font-size: 15.5px;
+    margin-bottom: 14px;
+    position: relative;
+    padding-left: 28px;
+    color: #554437;
+    font-weight: 500;
+}
+
+li::before {
+    content: '👑';
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, #eef9ff 0%, #f4f1ff 100%);
+    border: 2px dashed #99ccff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    box-shadow: 0 5px 15px rgba(153, 204, 255, 0.2);
+}
+
+footer {
+    text-align: center;
+    margin-top: 45px;
+    padding-top: 25px;
+    border-top: 2.5px dashed #fce2a6;
+    font-size: 15px;
+    color: #8c7361;
+    font-family: 'Fredoka', cursive;
+    font-weight: 600;
+}
+
+.heart {
+    color: #ff3366;
+    font-size: 20px;
+    animation: heartbeat 1.2s infinite;
+    display: inline-block;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.2); }
+    60% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.parrot-divider {
+    text-align: center;
+    font-size: 28px;
+    margin: 25px 0;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));
+}
+
+/* Uçuşan Emojiler */
+.floating-emoji {
+    position: fixed;
+    top: -50px;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1;
+    animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.9;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(105vh) rotate(360deg);
+        opacity: 0;
+    }
+}
